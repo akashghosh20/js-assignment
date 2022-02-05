@@ -24,20 +24,20 @@ console.log (voriofsona);
 
       // problem 2
 
-function pandaCost(singara,somuca,jilapi){
+function pandaCost(singaraQuantity,somucaQuantity,jilapiQuantity){
 
-     const singaraPrice = singara*7 ;
-     const somucaPrice = somuca*10 ;
-     const jilapiPrice = jilapi*15 ;
+     const singaraPrice = singaraQuantity*7 ;
+     const somucaPrice = somucaQuantity*10 ;
+     const jilapiPrice = jilapiQuantity*15 ;
      const totalCost = singaraPrice + somucaPrice + jilapiPrice ;
-     if ( singara<0){
-         console.log("You have entered a invalid number of singra");
+     if ( singaraQuantity<0){
+         console.log("You have entered a invalid number of singraQuantity");
      }
-     else if( somuca<0){
-         console.log("You have enetered a invalid number of somuca");
+     else if( somucaQuantity<0){
+         console.log("You have enetered a invalid number of somucaQuantity");
      }
-     else if(jilapi<0){
-         console.log("You have entered a invaid number of jilapi");
+     else if(jilapiQuantity<0){
+         console.log("You have entered a invaid number of jilapiQuantity");
 
      }
      else{
@@ -49,7 +49,7 @@ function pandaCost(singara,somuca,jilapi){
 
 
 }
- const totalCostOfFoodpanda = pandaCost(-2,-3,4);
+ const totalCostOfFoodpanda = pandaCost(2,3,4);
  console.log(totalCostOfFoodpanda);
 
 
@@ -91,24 +91,10 @@ function pandaCost(singara,somuca,jilapi){
         
     } 
     
-    const budgetOfPicnic = picnicBudget(5);
+    const budgetOfPicnic = picnicBudget(250);
     console.log(budgetOfPicnic);
     
 
     // problem 4
 
-    const names =["akash","mithun","abdullah","batash","catash","datash","mridul","joti"];
-
-
-    function addFriend(names){
-        let odd = [];
-        for(const element of names){
-            if(names.length % 2 != 0){
-                odd.push(element);
-                
-            }
-        } return odd;
-        
-    }
-    const oddNames = addFriend(names);
-    console.log(oddNames);
+    
