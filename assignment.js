@@ -97,4 +97,37 @@ function pandaCost(singaraQuantity,somucaQuantity,jilapiQuantity){
 
     // problem 4
 
-    
+    function oddFriend(friendNameArray){
+
+         for(const getFriendName of friendNameArray ){
+
+              if(typeof(getFriendName) == 'string'){
+
+                  if(getFriendName.length %2 != 0){
+
+                    return getFriendName;
+                  }
+                  else{
+
+                    continue;
+                  }
+
+
+
+              } else {
+
+
+                   return  'please check your friendlist.';
+
+              }
+
+
+
+         }
+
+    return 'we cannot find any odd friend name in your array';
+
+    }
+    const names =['abul','abul','cabula','dabula']
+    const oddName = oddFriend(names);
+    console.log(oddName);
